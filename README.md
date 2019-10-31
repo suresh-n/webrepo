@@ -2,4 +2,4 @@
 ![GitHub Logo](/img/logo.png)
 
 
-under construction
+The site is under construction... 
