@@ -1,66 +1,182 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>Kovai Car A/C </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <title>
-        Kovai Car A/C
-    </title>
-</head>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,p {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+embed{
+  font-size:15px !important;
+  line-height:1.5;
+  font-family:"Lato", sans-serif
+}
+</style>
+
+<style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  </style>
+
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <div class="row">
-	  <div class="col-sm-12"><img src="img/logo.png" alt="logo" style="width:250px;"></div>
-    </div> 
-    <div class="row">
-	  <div class="col-sm-12">
-		<img src="img/Under-Construction-PNG-File.png" alt="Italian Trulli">
 
-		   </div>
+  <div class=""><img src="img/logo.png" alt="logo" style="width:250px;float: left;"></div> 
+
+
+<!-- Navigation bar -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-bar w3-light-grey">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block">Home</a>
     </div>
-
-  <!-- Brand/logo 
+    <div class="w3-col s3">
+      <a href="about.html" class="w3-button w3-block">About us</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="gallery.html" class="w3-button w3-block">Gallary</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="contact.html" class="w3-button w3-block">Contact us</a>
+    </div>
+  </div>
+</div>
+<div>
+  <br />
+</div>
+<!-- slideshow bar -->
+<div class="slideshow-container"> 
+  <div class="w3-content w3-section" style="max-width:1200px">
+    <img class="mySlides" src="img/slideshow/img_ac1.jpg" style="width:100%">
+    <img class="mySlides" src="img/slideshow/img_ac2.jpg" style="width:100%">
+    <img class="mySlides" src="img/slideshow/img_ac4.jpg" style="width:100%">
+    <img class="mySlides" src="img/slideshow/img_ac5.jpg" style="width:100%">
+  </div>
   
-<nav class="navbar navbar-expand-sm bg-info navbar-dark">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="aboutus.html">About us</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="gallery.html">Gallery</a>
-    </li>
-
-<li class="nav-item">
-      <a class="nav-link" href="contactus.html">Contact us</a>
-    </li>
-
-  </ul>
-  </ul>
-</nav>
-
+  <script>
+  var myIndex = 0;
+  carousel();
   
-         	
-   <div class="row">
-	  <div class="col-sm-3">.col-sm-3</div>
-	  <div class="col-sm-3">.col-sm-3</div>
-	  <div class="col-sm-3">.col-sm-3</div>
-	  <div class="col-sm-3">.col-sm-3</div>
-	</div> 
--->
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+  </div>
+  <div>
+    <br />
+    <br />
+    <br />
+    <br/>
+  </div>
+<!-- Grid -->
+<div class="w3-row w3-container">
+  <div class="w3-center w3-padding-64">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+  </div>
+
+  <div class="wrapper">
+    <div class="cols">
+  <div class="card">
+    <img src="img/fittings.jpeg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>Car A/C Fitting Service</b></h4> 
+    </div>
+  </div> 
+
+  <div class="card">
+    <img src="img/gas_charging.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>Car A/C Gas Charging</b></h4> 
+    </div>
+  </div> 
+  
+  <div class="card">
+    <img src="img/car_rental.png" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>A/C Car Rental Service</b></h4> 
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img/car_clean.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>Car Interior Cleaning</b></h4> 
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img/car_video.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>Car Video Fixing</b></h4> 
+    </div>
+  </div>
+</div>
+  </div>
+
+
+<div>
+    <br />
+    <br />
+    </div>
+  <!-- SF-->
+  <div class="wrapper textfont">
+
+<h4> <strong>Salient Features </strong></h4>   
+
+  <p align="justify"> All staff & technical team are personally trained, having good knowledge & technical skills to diagnose the problems and to provide correct solution. We have technical back up from the original equipment manufacturer. Our trained manpower delivers quality service. Our workshop is equipped with all necessary and special tools to carry out systematic repairs. We use genuine spares and recommended consumables to maintain the performance and life of the air-conditioning system.
+
+  </p>
+</div>
+ </div>
+<!--advantages-->
+<div class="wrapper textfont">
+
+<h4>  <strong> Advantages </strong></h4>
+
+   <p> 1. Attractive prices  </p>
+   <p> 2. Skilled Installation team</p> 
+   <p> 3. Ample & covered parking space </p>
+      
+  </div>
+<div>
+  <br />
+  <br />
+</div>
+
+<!-- Footer -->
+
+<footer class=" footer">
+  <div> 
+    <i>  &copy; www.kovaicarac.com  </i>
+  </div>
+</footer>
+
 
 </body>
-
 </html>
