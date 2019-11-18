@@ -8,20 +8,22 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Courgette|Patua+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Kovai Car A/C </title>
   </head>
   <body>
-    <div class="container-fluid">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"> 
-                <img src="img/logo.png" alt="logo" style="width:150px;float: left;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+    <!--Header-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light header">
+        <a class="navbar-brand" href="index.html"> 
+            <img src="img/logo.png" alt="logo" style="width:150px;float: left;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -34,50 +36,80 @@
                 <li class="nav-item">
                     <a class="nav-link active-page" href="contact.html">contact Us</a>
                 </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <br />
-                        <br />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <p class="para">
-                            If you are interested in any one of the services we provide, <span class="highlight"><img src="img/icon/call-answer.png" />&nbsp;call us.</span> <br>
-                         We'd love to talk to you about the best way to solve your problems.
-                        </p>
-                        <address>
-                            <h6>Office Address: </h6>     
-                            <strong> Kovai Car A/c </strong> 
-                                <p>292, Royal Garden, New Bus Stand By-Pass-Road, Opp to ARRS Multiplex,
-                                Salem-636004, Tamil Nadu, India.
-                                <br />
-                                phone:<span class="highlight"> 98427-30156</span>
-                                <br />
-                                mailto: <a href="mailto:kovaicarac@gmail.com" target="_blank" >kovaicarac@gmail.com</a>
-                                </p>
-                        </address>
-                    </div>
-                    <div class="col-6">
-                        <p> 
-                            <strong>Get Direction: </strong> 
-                        </p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.4069795700016!2d78.1343014!3d11.665542799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf040037b3711%3A0xa7a7bb9e1ff93351!2sKovai%20Car%20A%2FC!5e0!3m2!1sen!2sin!4v1572776950528!5m2!1sen!2sin" width="500" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-                </div>
-        </div> 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        </div>  
-        <div class="footer">
-           <i>  &copy; www.kovaicarac.com  </i> &nbsp;&nbsp;
+            </ul>
         </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row line" >
+            <div class="col-12">
+                <hr />
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <br />
+                    <br />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="para">
+                        If you are interested in any one of the services we provide, <span class="highlight"><img src="img/icon/call-answer.png" />&nbsp;call us.</span> <br>
+                        We'd love to talk to you about the best way to solve your problems.
+                    </p>
+                    <address>
+                        <h6>Office Address: </h6>     
+                        <strong> Kovai Car A/c </strong> 
+                        <p>292, Royal Garden, New Bus Stand By-Pass-Road, Opp to ARRS Multiplex,
+                            Salem-636004, Tamil Nadu, India.
+                            <br />
+                            phone:<span class="highlight"> 98427-30156</span>
+                            <br />
+                            mailto: <a href="mailto:kovaicarac@gmail.com" target="_blank" >kovaicarac@gmail.com</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p id="getMap"><span><img src="img/icon/location.png" /></span>click here to get the direction</p>
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.4069795700016!2d78.1343014!3d11.665542799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf040037b3711%3A0xa7a7bb9e1ff93351!2sKovai%20Car%20A%2FC!5e0!3m2!1sen!2sin!4v1572776950528!5m2!1sen!2sin" width="290" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <br />
+                    <br />
+                </div>
+            </div>
+           
+        </div> 
+
+    </div>  
+
+    <!--footer-->
+    <div class="footer">
+        <i>  &copy; www.kovaicarac.com  </i> &nbsp;&nbsp;
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#getMap").click(function(){
+                $("iframe").show();
+            });
+            });
+    </script>
   </body>
 </html>
