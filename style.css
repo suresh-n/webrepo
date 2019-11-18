@@ -21,10 +21,11 @@ address{
 .footer{
     color : black;
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    /* height: 40px; */
     line-height: 40px;
     background-color: #CCCCCC;
     text-align: right;
@@ -32,4 +33,48 @@ address{
 
 .active-page{
     font-weight: bold;
+    color: #569494 !important;
+}
+
+.header{
+    background-color: white;
+    line-height: 1rem;
+}
+
+.line{
+    line-height: 1rem;
+
+}
+
+.map{
+    display: none;
+}
+
+#getMap{
+    color:#3C98C3;
+    text-decoration: underline;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
+li{
+    font-size: 15px;
+    font-family: 'Courgette', cursive;
+    text-align: justify;
 }
