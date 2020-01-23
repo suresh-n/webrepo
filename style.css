@@ -80,3 +80,9 @@ address{
 hr{
     margin-top: 0rem;
 }
+
+
+.hitcounter {
+    position: absolute;
+    right: 0px;
+}
